@@ -1,0 +1,10 @@
+{
+  "presets": [["env", { "module": false }]],
+  "plugins": [
+    "add-module-exports",
+    ["transform-runtime"]
+  ],
+  "env": {
+    "node": true
+  }
+}
