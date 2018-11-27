@@ -14,6 +14,6 @@ const tipoMadeiraSchema = new mongoose.Schema(
   },
   { timestamps: true }
 )
-const tipoMandeira = mongoose.model('tiposMadeiras', tipoMadeiraSchema)
+const tipoMadeira = mongoose.model('tiposMadeiras', tipoMadeiraSchema)
 
-module.exports = tipoMandeira
+module.exports = tipoMadeira

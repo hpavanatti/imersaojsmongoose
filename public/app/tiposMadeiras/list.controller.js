@@ -33,7 +33,7 @@
             swal({
               position: 'top-end',
               type: 'success',
-              title: 'Tipos de Madeiras excluído com sucesso',
+              title: 'Tipos de Madeiras excluídos com sucesso',
               showConfirmButton: false,
               timer: 1500
             })

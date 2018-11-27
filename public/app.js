@@ -96,14 +96,14 @@
         name: 'app.outrosItens.new',
         url: '/new',
         templateUrl: '/views/outrosItens/form.html',
-        controller: 'OutrosItensListController',
+        controller: 'OutrosItensFormController',
         controllerAs: 'vm'
       })
       .state({
         name: 'app.outrosItens.edit',
         url: '/:id',
         templateUrl: '/views/outrosItens/form.html',
-        controller: 'OutrosItensListController',
+        controller: 'OutrosItensFormController',
         controllerAs: 'vm'
       })
       // TiposMadeiras
@@ -124,14 +124,14 @@
         name: 'app.tiposMadeiras.new',
         url: '/new',
         templateUrl: '/views/tiposMadeiras/form.html',
-        controller: 'TiposMadeirasListController',
+        controller: 'TiposMadeirasFormController',
         controllerAs: 'vm'
       })
       .state({
         name: 'app.tiposMadeiras.edit',
         url: '/:id',
         templateUrl: '/views/tiposMadeiras/form.html',
-        controller: 'TiposMadeirasListController',
+        controller: 'TiposMadeirasFormController',
         controllerAs: 'vm'
       })
       // ValoresMadeiras
@@ -152,14 +152,14 @@
         name: 'app.valoresMadeiras.new',
         url: '/new',
         templateUrl: '/views/valoresMadeiras/form.html',
-        controller: 'ValoresMadeirasListController',
+        controller: 'ValoresMadeirasFormController',
         controllerAs: 'vm'
       })
       .state({
         name: 'app.valoresMadeiras.edit',
         url: '/:id',
         templateUrl: '/views/valoresMadeiras/form.html',
-        controller: 'ValoresMadeirasListController',
+        controller: 'ValoresMadeirasFormController',
         controllerAs: 'vm'
       })
       // ValoresMoveis
@@ -180,14 +180,14 @@
         name: 'app.valoresMoveis.new',
         url: '/new',
         templateUrl: '/views/valoresMoveis/form.html',
-        controller: 'ValoresMoveisListController',
+        controller: 'ValoresMoveisFormController',
         controllerAs: 'vm'
       })
       .state({
         name: 'app.valoresMoveis.edit',
         url: '/:id',
         templateUrl: '/views/valoresMoveis/form.html',
-        controller: 'ValoresMoveisListController',
+        controller: 'ValoresMoveisFormController',
         controllerAs: 'vm'
       })
   }
