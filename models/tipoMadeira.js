@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const tipoMandeiraSchema = new mongoose.Schema(
+const tipoMadeiraSchema = new mongoose.Schema(
   {
     cor: {
       type: String,
@@ -14,6 +14,6 @@ const tipoMandeiraSchema = new mongoose.Schema(
   },
   { timestamps: true }
 )
-const tipoMandeira = mongoose.model('tiposMadeiras', tipoMandeiraSchema)
+const tipoMandeira = mongoose.model('tiposMadeiras', tipoMadeiraSchema)
 
 module.exports = tipoMandeira
