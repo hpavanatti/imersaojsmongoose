@@ -14,7 +14,7 @@ const valorMadeiraSchema = new mongoose.Schema(
     fornecedor: {
       type: String
     },
-    valorTotal: String
+    valorTotal: Number
   },
   { timestamps: true }
 )

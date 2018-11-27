@@ -11,16 +11,16 @@
     </div>
     <div class="form-group">
         <label>Quantidade</label>
-        <input ng-model="vm.valorMadeira.quantidade" type="text" class="form-control">
+        <input ng-model="vm.valorMadeira.quantidade" type="number" class="form-control">
     </div>
     <div class="form-group">
         <label>Valor Total</label>
-        <input ng-model="vm.valorMadeira.valorTotal" type="text" class="form-control">
+        <input ng-model="vm.valorMadeira.valorTotal" type="number" class="form-control">
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Tamanho da Chapa</label>
-            <input ng-model="vm.valorMadeira.tamanhoChapa" type="text" class="form-control">
+            <input ng-model="vm.valorMadeira.tamanhoChapa" type="number" class="form-control">
         </div>
         <div class="form-group col-md-6">
             <label>Fornecedor</label>
@@ -28,12 +28,12 @@
         </div>
     </div>
     <div class="form-group text-right">
-        <button type="button" ng-click="vm.salvar()" class="btn btn-lg btn-success">
+        <button type="button" ng-click="vm.salvar()" class="btn btn-success">
             <i class="fa fa-save"></i>
             Salvar
         </button>
         <a ui-sref="app.valoresMadeiras.list" class="btn btn-danger">
-            <i class="fa fa-backward"></i>
+            <i class="fa fa-cancel"></i>
             Cancelar
         </a>
     </div>

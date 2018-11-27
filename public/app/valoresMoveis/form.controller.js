@@ -25,7 +25,7 @@
       if (vm.valorMovel._id) {
         ValoresMoveisService.update(vm.valorMovel).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'valor do Movel atualizado com sucesso',
             showConfirmButton: false,
@@ -36,7 +36,7 @@
       } else {
         ValoresMoveisService.insert(vm.valorMovel).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'valor do Movel inserido com sucesso',
             showConfirmButton: false,

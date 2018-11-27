@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const valorMovelSchema = new mongoose.Schema(
   {
     valorMadeira: {
-      type: String,
+      type: Number,
       required: true
     },
     quantidadeMadeira: {
@@ -15,7 +15,7 @@ const valorMovelSchema = new mongoose.Schema(
       required: true
     },
     valorOutroItem: {
-      type: String,
+      type: Number,
       required: true
     },
     quantidadeOutroItem: {
@@ -25,7 +25,7 @@ const valorMovelSchema = new mongoose.Schema(
     cliente: {
       type: String
     },
-    valorTotal: String
+    valorTotal: Number
   },
   { timestamps: true }
 )

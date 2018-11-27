@@ -31,7 +31,7 @@
           TiposMadeirasService.remove(id).then(function () {
             vm.load()
             swal({
-              position: 'top-end',
+              position: 'center',
               type: 'success',
               title: 'Tipos de Madeiras excluídos com sucesso',
               showConfirmButton: false,

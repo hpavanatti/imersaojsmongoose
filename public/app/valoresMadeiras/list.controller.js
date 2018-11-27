@@ -31,7 +31,7 @@
           ValoresMadeirasService.remove(id).then(function () {
             vm.load()
             swal({
-              position: 'top-end',
+              position: 'center',
               type: 'success',
               title: 'Valores de madeiras excluído com sucesso',
               showConfirmButton: false,

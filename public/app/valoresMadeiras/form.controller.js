@@ -25,7 +25,7 @@
       if (vm.valorMadeira._id) {
         valoresMadeirasService.update(vm.valorMadeira).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Valores de madeiras atualizado com sucesso',
             showConfirmButton: false,
@@ -36,7 +36,7 @@
       } else {
         valoresMadeirasService.insert(vm.valorMadeira).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Valores de madeiras inserido com sucesso',
             showConfirmButton: false,

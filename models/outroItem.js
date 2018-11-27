@@ -11,14 +11,14 @@ const outroItemSchema = new mongoose.Schema(
     },
     fornecedor: String,
     dataUltimaCompra: {
-      type: String
+      type: Date
     },
     precoUnidade: {
-      type: String,
+      type: Number,
       required: true
     },
     valorTotal: {
-      type: String,
+      type: Number,
       required: true
     },
     marcaItem: {

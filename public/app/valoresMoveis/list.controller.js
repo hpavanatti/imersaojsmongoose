@@ -31,7 +31,7 @@
           ValoresMoveisService.remove(id).then(function () {
             vm.load()
             swal({
-              position: 'top-end',
+              position: 'center',
               type: 'success',
               title: 'Valores de Moveis excluídos com sucesso',
               showConfirmButton: false,

@@ -31,7 +31,7 @@
           FornecedoresService.remove(id).then(function () {
             vm.load()
             swal({
-              position: 'top-end',
+              position: 'center',
               type: 'success',
               title: 'Fornecedores excluídos com sucesso',
               showConfirmButton: false,

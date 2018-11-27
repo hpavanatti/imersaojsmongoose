@@ -25,7 +25,7 @@
       if (vm.fornecedor._id) {
         FornecedoresService.update(vm.fornecedor).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Fornecedores atualizados com sucesso',
             showConfirmButton: false,
@@ -36,7 +36,7 @@
       } else {
         FornecedoresService.insert(vm.fornecedor).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Fornecedores inseridos com sucesso',
             showConfirmButton: false,

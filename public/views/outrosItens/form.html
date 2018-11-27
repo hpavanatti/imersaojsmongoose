@@ -20,28 +20,28 @@
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Quantidade de estoque</label>
-            <input ng-model="vm.outroItem.quantidadeEstoque" type="text" class="form-control">
+            <input ng-model="vm.outroItem.quantidadeEstoque" type="number" class="form-control">
         </div>
         <div class="form-group col-md-6">
             <label>Data última compra</label>
-            <input ng-model="vm.outroItem.dataUltimaCompra" type="text" class="form-control">
+            <input ng-model="vm.outroItem.dataUltimaCompra" type="date" class="form-control">
         </div>
         <div class="form-group col-md-6">
             <label>Preço Unidade</label>
-            <input ng-model="vm.outroItem.precoUnidade" type="text" class="form-control">
+            <input ng-model="vm.outroItem.precoUnidade" type="number" class="form-control">
         </div>
         <div class="form-group col-md-6">
             <label>Valor Total</label>
-            <input ng-model="vm.outroItem.valorTotal" type="text" class="form-control">
+            <input ng-model="vm.outroItem.valorTotal" type="number" class="form-control">
         </div>
     </div>
     <div class="form-group text-right">
-        <button type="button" ng-click="vm.salvar()" class="btn btn-lg btn-success">
+        <button type="button" ng-click="vm.salvar()" class="btn btn-success">
             <i class="fa fa-save"></i>
             Salvar
         </button>
         <a ui-sref="app.outrosItens.list" class="btn btn-danger">
-            <i class="fa fa-backward"></i>
+            <i class="fa fa-cancel"></i>
             Cancelar
         </a>
     </div>

@@ -25,7 +25,7 @@
       if (vm.cliente._id) {
         ClientesService.update(vm.cliente).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Cliente atualizado com sucesso',
             showConfirmButton: false,
@@ -36,7 +36,7 @@
       } else {
         ClientesService.insert(vm.cliente).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Cliente inserido com sucesso',
             showConfirmButton: false,

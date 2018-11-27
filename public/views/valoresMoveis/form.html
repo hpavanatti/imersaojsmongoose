@@ -11,12 +11,12 @@
     </div>
     <div class="form-group">
         <label>Valor Madeira</label>
-        <input ng-model="vm.valorMovel.valorMadeira" type="text" class="form-control">
+        <input ng-model="vm.valorMovel.valorMadeira" type="number" class="form-control">
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label>Quantidade de Madeira</label>
-            <input ng-model="vm.valorMovel.quantidadeMadeira" type="text" class="form-control">
+            <input ng-model="vm.valorMovel.quantidadeMadeira" type="number" class="form-control">
         </div>
         <div class="form-group col-md-6">
           <label>Outro Item</label>
@@ -24,24 +24,24 @@
       </div>
         <div class="form-group col-md-6">
             <label>Valor Outro Item</label>
-            <input ng-model="vm.valorMovel.valorOutroItem" type="text" class="form-control">
+            <input ng-model="vm.valorMovel.valorOutroItem" type="number" class="form-control">
         </div>
         <div class="form-group col-md-6">
           <label>Quantidade Outro Item</label>
-          <input ng-model="vm.valorMovel.quantidadeOutroItem" type="text" class="form-control">
+          <input ng-model="vm.valorMovel.quantidadeOutroItem" type="number" class="form-control">
       </div>
     </div>
     <div class="form-group">
         <label>Valor Total</label>
-        <input ng-model="vm.valorMovel.valorTotal" type="text" class="form-control">
+        <input ng-model="vm.valorMovel.valorTotal" type="number" class="form-control">
     </div>
     <div class="form-group text-right">
-        <button type="button" ng-click="vm.salvar()" class="btn btn-lg btn-success">
+        <button type="button" ng-click="vm.salvar()" class="btn btn-success">
             <i class="fa fa-save"></i>
             Salvar
         </button>
         <a ui-sref="app.valoresMoveis.list" class="btn btn-danger">
-            <i class="fa fa-backward"></i>
+            <i class="fa fa-cancel"></i>
             Cancelar
         </a>
     </div>

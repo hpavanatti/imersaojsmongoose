@@ -25,7 +25,7 @@
       if (vm.tipoMadeira._id) {
         TiposMadeirasService.update(vm.tipoMadeira).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Tipos de Madeiras atualizado com sucesso',
             showConfirmButton: false,
@@ -36,7 +36,7 @@
       } else {
         TiposMadeirasService.insert(vm.tipoMadeira).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Tipos de Madeiras inserido com sucesso',
             showConfirmButton: false,

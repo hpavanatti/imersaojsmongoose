@@ -31,7 +31,7 @@
           OutrosItensService.remove(id).then(function () {
             vm.load()
             swal({
-              position: 'top-end',
+              position: 'center',
               type: 'success',
               title: 'Outros Itens excluído com sucesso',
               showConfirmButton: false,

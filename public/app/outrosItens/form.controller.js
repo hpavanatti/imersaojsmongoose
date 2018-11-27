@@ -25,7 +25,7 @@
       if (vm.outroItem._id) {
         OutrosItensService.update(vm.outroItem).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Outros Itens atualizados com sucesso',
             showConfirmButton: false,
@@ -36,7 +36,7 @@
       } else {
         OutrosItensService.insert(vm.outroItem).then(function () {
           swal({
-            position: 'top-end',
+            position: 'center',
             type: 'success',
             title: 'Outros Itens inseridos com sucesso',
             showConfirmButton: false,
