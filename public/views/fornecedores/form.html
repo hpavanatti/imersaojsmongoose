@@ -1,0 +1,48 @@
+<div class="col-10 mx-auto d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">{{vm.titulo}}</h1>
+</div>
+
+<form class="col-10 mx-auto">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Nome Fantasia</label>
+            <input ng-model="vm.fornecedor.nomeFantasia" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Nome do Responsavel</label>
+        <input ng-model="vm.fornecedor.nomeResponsavel" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Contato</label>
+        <input ng-model="vm.fornecedor.contato" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>E-mail</label>
+        <input ng-model="vm.fornecedor.email" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Horário de Atendimento</label>
+        <input ng-model="vm.fornecedor.horarioAtendimento" type="text" class="form-control">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Endereço</label>
+            <input ng-model="vm.fornecedor.endereco" type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Cpf ou Cnpj</label>
+            <input ng-model="vm.fornecedor.cpfCnpj" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group text-right">
+        <button type="button" ng-click="vm.salvar()" class="btn btn-lg btn-success">
+            <i class="fa fa-save"></i>
+            Salvar
+        </button>
+        <a ui-sref="app.fornecedores.list" class="btn btn-danger">
+            <i class="fa fa-backward"></i>
+            Cancelar
+        </a>
+    </div>
+</form>

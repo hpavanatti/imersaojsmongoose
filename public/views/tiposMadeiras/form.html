@@ -1,0 +1,36 @@
+<div class="col-10 mx-auto d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">{{vm.titulo}}</h1>
+</div>
+
+<form class="col-10 mx-auto">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Cor</label>
+            <input ng-model="vm.tipoMadeira.cor" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Tipo</label>
+        <input ng-model="vm.tipoMadeira.tipo" type="text" class="form-control">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Origem</label>
+            <input ng-model="vm.tipoMadeira.origem" type="text" class="form-control">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Qualidade</label>
+            <input ng-model="vm.tipoMadeira.qualidade" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group text-right">
+        <button type="button" ng-click="vm.salvar()" class="btn btn-lg btn-success">
+            <i class="fa fa-save"></i>
+            Salvar
+        </button>
+        <a ui-sref="app.tiposMadeiras.list" class="btn btn-danger">
+            <i class="fa fa-backward"></i>
+            Cancelar
+        </a>
+    </div>
+</form>

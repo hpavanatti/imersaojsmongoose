@@ -1,37 +1,14 @@
-const http = require('http')
-const express = require('express')
-const bodyParser = require('body-parser')
-const usuarioModule = require('./resources/usuario')
-const clienteModule = require('./resources/cliente')
-const fornecedorModule = require('./resources/fornecedor')
-const outroItemModule = require('./resources/outroItem')
-const tipoMadeiraModule = require('./resources/tipoMadeira')
-const valorMadeiraModule = require('./resources/valorMadeira')
-const valorMovelModule = require('./resources/valorMovel')
+const http = require('http');
+const database = require('./config/database');
+const app = require('./config/express');
 
-const mongoose = require('mongoose')
+database(process.env.MONGODB_URI || 'mongodb://localhost/pedidex');
+require('./models');
 
-const uri = 'mongodb://localhost/pedidex'
-mongoose.connect(uri)
-mongoose.connection.on('connected', () => {
-  console.log('MongoDB conectado em', uri)
-})
-mongoose.connection.on('error', erro => {
-  console.log('Erro no MongoDB', erro)
-})
+const resources = require('./resources');
+resources(app);
 
-const app = express()
-app.use(express.static('./public'))
-app.use(bodyParser.json())
-usuarioModule(app)
-clienteModule(app)
-fornecedorModule(app)
-outroItemModule(app)
-tipoMadeiraModule(app)
-valorMadeiraModule(app)
-valorMovelModule(app)
-
-const port = 3000
+const port = process.env.PORT || 3000;
 http.createServer(app).listen(port, () => {
-  console.log('Porta', port)
-})
+    console.log('Servidor iniciado na porta', port);
+});

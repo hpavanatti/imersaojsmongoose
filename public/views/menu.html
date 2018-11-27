@@ -1,0 +1,64 @@
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <span class="navbar-brand col-sm-3 col-md-2 mr-0">MoveisSobreMedidex</span>
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" ui-sref="login">Sair</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="app.dashboard">
+                            <span class="fa fa-tachometer-alt"></span>
+                            Dashboard <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="app.fornecedores">
+                            <span class="fa fa-shopping-cart"></span>
+                            Fornecedores
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="app.outrosItens">
+                            <span class="fa fa-barcode"></span>
+                            Outros Itens
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="app.clientes">
+                            <span class="fa fa-users"></span>
+                            Clientes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" ui-sref="app.tiposMadeiras">
+                          <span class="fa fa-users"></span>
+                          Tipos de Madeiras
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" ui-sref="app.valoresMadeiras">
+                          <span class="fa fa-users"></span>
+                          Valores de Madeiras
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" ui-sref="app.valoresMoveis">
+                          <span class="fa fa-users"></span>
+                          Valores de Moveis
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <ui-view></ui-view>
+        </main>
+    </div>
+</div>
